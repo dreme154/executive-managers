@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="output.css" />
+    <title id="profile-page-title">Activation Form</title>
+  </head>
+  <body class="font-inter relative bg-slate-50">
+    
+    <!-- Navbar -->
+    <div class="bg-slate-200 border-y border-gray-300 sticky top-0 z-20 p-3 flex items-center justify-between">
+      <span class="block w-36"><img src="images/logo.png" alt="Logo"></span>
+      <a href="index.html" class="text-blue-700 hover:underline text-sm">Back to Home</a>
+    </div>
+
+    <form class="max-w-md mt-3 mb-5 mx-2 bg-white p-6 rounded-lg shadow-lg space-y-4 border border-gray-200">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4 text-center">Membership Card Activation Form</h2>
+      
+      <!-- Celebrity Name -->
+      <div>
+        <label for="celebrity-name" class="block text-sm font-medium text-blue-700">Celebrity Name</label>
+        <input 
+          type="text" 
+          id="celebrity-name" 
+          placeholder="Enter celebrity name"
+          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+    
+      <!-- Fan Name -->
+      <div>
+        <label for="fan-name" class="block text-sm font-medium text-blue-700">Fan Name</label>
+        <input 
+          type="text" 
+          id="fan-name" 
+          placeholder="Enter your name"
+          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+    
+      <!-- Address -->
+      <div>
+        <label for="address" class="block text-sm font-medium text-blue-700">Address</label>
+        <input 
+          type="text" 
+          id="address" 
+          placeholder="Enter your address"
+          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+    
+      <!-- Phone Number -->
+      <div>
+        <label for="phone" class="block text-sm font-medium text-blue-700">Phone Number</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          placeholder="Enter phone number"
+          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+    
+      <!-- Activation Number -->
+      <div>
+        <label for="activation-number" class="block text-sm font-medium text-blue-700">Activation Number</label>
+        <input 
+          type="text" 
+          id="activation-number" 
+          placeholder="Enter activation number"
+          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+    
+      <!-- Button -->
+      <button 
+        type="submit"
+        class="w-full mt-4 text-white bg-blue-700 px-6 py-3 rounded-xl hover:bg-blue-900 text-base font-medium flex items-center justify-center gap-2"
+      >
+        <span class="material-symbols-outlined animate-bounceY">bolt</span>
+        Activate Card
+      </button>
+    </form>
+    
+    <script src="js/membership.js"></script>
+  </body>
+</html>

@@ -281,37 +281,22 @@ const celebs = [
 	},
 ];
 
-const profileImg = document.getElementById('profile-img');
-const profileName = document.getElementById('profile-name');
-const profileProfession = document.getElementById('profile-profession');
-const profileAge = document.getElementById('profile-age');
-const profileDescription = document.getElementById('profile-description');
-const profilePageTitle = document.getElementById('profile-page-title');
-
-const activationLink = document.getElementById('activation-link');
-const activationBtn = document.getElementById('activation-btn');
-
-
-// Display Profile Details
-function loadProfile() {
+function populateCelebrityName() {
 	const urlParams = new URLSearchParams(window.location.search);
-	const profileId = urlParams.get('id');
+	const celebNameParam = urlParams.get('celeb');
 
-	if (profileId !== null && celebs[profileId]) {
-		const celeb = celebs[profileId];
-		profilePageTitle.textContent = `Profile - ${celeb.name}`;
-		profileImg.src = celeb.img;
-		profileName.textContent = celeb.name;
-		profileProfession.textContent = celeb.profession;
-		profileAge.textContent = `Age: ${celeb.age}`;
-		profileDescription.textContent = celeb.profile;
-		
-		const celebName = celeb.name.split(' ').join('-').toLowerCase();
+	if (celebNameParam) {
+		const celebName = celebNameParam.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
-		activationBtn.addEventListener('click', () => {
-			activationLink.href = `membership.html?celeb=${celebName}`
-		});
+		const celeb = celebs.find(celeb => celeb.name === celebName);
+
+		if (celeb) {
+			const celebNameField = document.getElementById('celebrity-name');
+			if (celebNameField) {
+				celebNameField.value = celeb.name;
+			}
+		}
 	}
 }
 
-if (profileImg) loadProfile();
+document.addEventListener('DOMContentLoaded', populateCelebrityName);

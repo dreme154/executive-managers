@@ -61,85 +61,236 @@ const celebs = [
 		profile: 'Award-winning actor'
 	},
 	{
-		name: 'Brad Pitt',
-		img: 'images/brad-pitt.jpg',
+		name: 'Miley Cyrus',
+		img: 'images/miley-cyrus.webp',
+		profession: 'Actress',
+		age: 50,
+		profile: 'Award-winning actress'
+	},
+	{
+		name: 'Robert Downey Jr.',
+		img: 'images/robert-downey-jr.webp',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'
 	},
 	{
-		name: 'Brad Pitt',
-		img: 'images/brad-pitt.jpg',
+		name: 'Ben Affleck',
+		img: 	'images/ben-affleck.jpg',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'
 	},
 	{
-		name: 'Brad Pitt',
-		img: 'images/brad-pitt.jpg',
+		name: 'Alan Ritchson',
+		img: 'images/alan-ritchson.jpg',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'
 	},
 	{
-		name: 'Brad Pitt',
-		img: 'images/brad-pitt.jpg',
+		name: 'Blake Shelton',
+		img: 'images/blake-shelton.jpg',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'
 	},
 	{
-		name: 'Brad Pitt',
-		img: 'images/brad-pitt.jpg',
+		name: 'Chris Hemsworth',
+		img: 'images/chris-hemsworth.jpg',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'
 	},
 	{
-		name: 'Brad Pitt',
-		img: 'images/brad-pitt.jpg',
+		name: 'Henry Cavill',
+		img: 'images/henry-cavill.jpg',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'
 	},
 	{
-		name: 'Brad Pitt',
-		img: 'images/brad-pitt.jpg',
+		name: 'Demi Moore',
+		img: 'images/demi-moore.jpg',
+		profession: 'Actress',
+		age: 50,
+		profile: 'Award-winning actress'
+	},
+	{
+		name: 'Luke Combs',
+		img: 'images/luke-combs.jpg',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'
 	},
-
-	'images/miley-cyrus.webp',
-	'images/robert-downey-jr.webp',
-	'images/ben-affleck.jpg',
-	'images/alan-ritchson.jpg',
-	'images/blake-shelton.jpg',
-	'images/chris-hemsworth.jpg',
-	'images/henry-cavill.jpg',
-	'images/luke-combs.jpg',
-	'images/quavo.jpg',
-	'images/scarlett-johansson.jpg',
-	'images/tim-mcgraw.jpg',
-	'images/tom-burke.webp',
-	'images/zack-snyder.webp',
-	'images/luke-bryan.jpg',
-	'images/mark-buffalo.webp',
-	'images/ron-perlman.jpg',
-	'images/tom-hiddleston.jpg',
-	'images/ryan-reynolds.jpg',
-	'images/woddy-harrelson.jpg',
-	'images/will-parfitt.jpg',
-	'images/david-corenswet.jpg',
-	'images/lenny-kravitz.jpg',
-	'images/tom-hardy.png',
-	'images/liam-hemsworth.jpg',
-	'images/keith-urban.jpg',
-	'images/chris-young.jpg',
-	'images/hugh-jackman.webp',
-	'images/jeremy-renner.jpg',
-	'images/jesse-eisenberg.jpg',
-	'images/chris-pratt.webp',
+	{
+		name: 'James Brolin',
+		img: 'images/james-brolin.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Quavo',
+		img: 'images/quavo.jpg',
+		profession: 'Musician',
+		age: 50,
+		profile: 'Award-winning musician'
+	},
+	{
+		name: 'Scarlett Johansson',
+		img: 'images/scarlett-johansson.jpg',
+		profession: 'Actress',
+		age: 50,
+		profile: 'Award-winning actress'
+	},
+	{
+		name: 'Tim McGraw',
+		img: 'images/tim-mcgraw.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Tom Burke',
+		img: 'images/tom-burke.webp',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Zack Snyder',
+		img: 'images/zack-snyder.webp',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Luke Bryan',
+		img: 'images/luke-bryan.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Mark Buffalo',
+		img: 'images/mark-buffalo.webp',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Theo James',
+		img: 'images/theo-james.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Ron Perlman',
+		img: 'images/ron-perlman.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Tom Hiddleston',
+		img: 'images/tom-hiddleston.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Ryan Reynolds',
+		img: 'images/ryan-reynolds.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Woddy Harrelson',
+		img: 'images/woddy-harrelson.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Will Parfitt',
+		img: 'images/will-parfitt.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'David Corenswet',
+		img: 'images/david-corenswet.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Lenny Kravitz',
+		img: 'images/lenny-kravitz.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Tom Hardy',
+		img: 'images/tom-hardy.png',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Keith Urban',
+		img: 'images/keith-urban.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Chris Young',
+		img: 'images/chris-young.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Liam Hemsworth',
+		img: 'images/liam-hemsworth.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Hugh Jackman',
+		img: 'images/hugh-jackman.webp',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Jeremy Renner',
+		img: 'images/jeremy-renner.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Jesse Eisenberg',
+		img: 'images/jesse-eisenberg.jpg',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
+	{
+		name: 'Chris Pratt',
+		img: 'images/chris-pratt.webp',
+		profession: 'Actor',
+		age: 50,
+		profile: 'Award-winning actor'
+	},
 ];
 
 const imagesPerPage = 10;
@@ -169,7 +320,7 @@ function displayImages() {
 		const imgElement = document.createElement('img');
 		imgElement.src = celeb.img;
 		imgElement.alt = celeb.name;
-		imgElement.style.height = '10rem';
+		imgElement.style.height = '11rem';
 		imgElement.style.objectFit = 'center';
 		imgElement.style.outline = '2px solid #e2e8f0'
 		imgElement.style.borderRadius = '0.375rem';
@@ -181,7 +332,7 @@ function displayImages() {
 
 		const professionElement = document.createElement('p');
 		professionElement.textContent = celeb.profession;
-		professionElement.className = 'text-gray-500 text-sm';
+		professionElement.className = 'text-gray-600 text-sm';
 
 		linkElement.appendChild(imgElement);
 		linkElement.appendChild(nameElement);
@@ -211,3 +362,55 @@ nextBtn?.addEventListener('click', () => {
 });
 
 if (gallery) displayImages();
+
+const searchInput = document.querySelector('input[type="text"]');
+const searchResults = document.getElementById('search-results');
+
+// Handle search input
+searchInput.addEventListener('input', (e) => {
+  const query = e.target.value.toLowerCase();
+  searchResults.innerHTML = ''; // Clear previous results
+  
+  if (query === '') {
+    searchResults.classList.add('hidden');
+    return;
+  }
+
+  const filteredCelebs = celebs
+    .map((celeb, index) => ({ ...celeb, index })) // Attach index to each celeb
+    .filter(celeb => celeb.name.toLowerCase().includes(query));
+
+  if (filteredCelebs.length > 0) {
+    filteredCelebs.forEach(celeb => {
+      const resultItem = document.createElement('div');
+      resultItem.className = 'flex items-center p-2 hover:bg-gray-100 cursor-pointer w-full';
+
+			const img = document.createElement('img');
+			img.src = celeb.img;
+			img.alt = celeb.name;
+			img.style.height = '2.5rem';
+			img.style.width = '2.5rem';
+			img.className = 'object-cover block mr-2 rounded-lg border border-gray-200';
+			
+			const text = document.createElement('div');
+			text.innerHTML = `
+				<p class="font-medium text-blue-600 text-sm">${celeb.name}</p>
+				<p class="text-sm text-gray-500">${celeb.profession}</p>
+			`;
+
+			resultItem.append(img);
+			resultItem.append(text);
+						
+      resultItem.addEventListener('click', () => {
+        window.location.href = `profile.html?id=${celeb.index}`;
+      });
+
+      searchResults.appendChild(resultItem);
+    });
+
+    searchResults.classList.remove('hidden');
+  } else {
+    searchResults.innerHTML = `<p class="p-2 text-gray-500 text-center">No results found</p>`;
+    searchResults.classList.remove('hidden');
+  }
+});

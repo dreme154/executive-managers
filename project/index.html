@@ -14,30 +14,30 @@
   <body class="font-inter relative bg-gray-100 tracking-wide">
     
     <!--Mobile sidebar-->
-    <div id="sidebar" class="flex items-start flex-col space-y-3 px-3 top-0 left-0 z-30 w-10/12 sm:w-80 h-full box-border bg-slate-100 fixed transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div id="sidebar" class="flex items-start flex-col space-y-3 px-3 top-0 left-0 z-10 w-10/12 sm:w-80 h-full box-border bg-slate-100 fixed transform -translate-x-full transition-transform duration-300 ease-in-out">
       <span class="block w-36 h-16 mt-3"><img src="images/logo.png" alt="Executive Managers Logo"></span>
 
       <span class="flex items-center justify-between w-full">
-        <p class="text-blue-700 text-sm font-semibold">Celebrities</p>
+        <p class="text-blue-700 text-sm font-bold">Celebrities</p>
         <span class="material-symbols-outlined text-blue-700">expand_more</span>
       </span>
 
       <span class="flex items-center justify-between w-full">
-        <p class="text-blue-700 text-sm font-semibold">Services</p>
+        <p class="text-blue-700 text-sm font-bold">Services</p>
         <span class="material-symbols-outlined text-blue-700">expand_more</span>
       </span>
 
       <span class="flex items-center justify-between w-full">
-        <p class="text-blue-700 text-sm font-semibold">Membership Card</p>
+        <p class="text-blue-700 text-sm font-bold">Membership Card</p>
         <span class="material-symbols-outlined text-blue-700">expand_more</span>
       </span>
 
-      <p class="text-blue-700 text-sm font-semibold">Promotion</p>
-      <p class="text-blue-700 text-sm font-semibold">Account</p>
-      <p class="text-blue-700 text-sm font-semibold">Pricing</p>
-      <p class="text-blue-700 text-sm font-semibold">Settings</p>
+      <p class="text-blue-700 text-sm font-bold">Promotion</p>
+      <p class="text-blue-700 text-sm font-bold">Account</p>
+      <p class="text-blue-700 text-sm font-bold">Pricing</p>
+      <p class="text-blue-700 text-sm font-bold">Settings</p>
 
-      <button class="text-white bg-blue-700 px-3 py-2 rounded-xl hover:bg-blue-900 text-base">Book a Celebrity</button>
+      <button class="text-white bg-blue-700 py-3.5 rounded-xl hover:bg-blue-900 text-base w-10/12">Book a Celebrity</button>
     </div>
 
     <!--Navbar-->
@@ -48,6 +48,22 @@
         <img class="w-7 h-7" id="menu-open" src="images/blue-hamburger-menu.png" alt="">
         <span id="menu-close" class="text-3xl text-blue-700 hidden">&times;</span>
       </div>
+    </div>
+
+    <!-- Search Bar Section -->
+    <div class="flex items-center bg-white rounded-xl shadow-md p-2 mx-3 mt-3">
+      <input 
+        type="text" 
+        placeholder="Search for celebrities..." 
+        class="w-full px-2 py-1 text-gray-700 outline-none"
+      />
+      <span class="material-symbols-outlined text-gray-500 cursor-pointer hover:text-blue-700 mr-2">
+        search
+      </span>
+    </div>
+
+    <!-- Search Results Section -->
+    <div id="search-results" class="absolute bg-white shadow-lg rounded-md w-11/12 sm:w-2/3 max-h-60 overflow-y-auto mt-1 mx-4 z-30 hidden">
     </div>
 
     <!-- Image Gallery Section -->
@@ -77,10 +93,12 @@
       <p class="text-gray-600 mb-6 text-sm">Get your membership card and join the official fanbase of your fave. Unlock exclusive content, early access, and more!</p>
 
       <div class="mt-3 mx-auto flex flex-col space-y-2 w-10/12">
-        <button class="flex items-center justify-center gap-1.5 text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">
-          <span class="material-symbols-outlined animate-bounceY">bolt</span>
-          Activate Card
-        </button>
+        <a href="membership.html" class="w-full">
+          <button class="w-full flex items-center justify-center gap-1.5 text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">
+            <span class="material-symbols-outlined animate-bounceY">bolt</span>
+            Activate Card
+          </button>
+        </a>
 
         <button class="flex items-center justify-center gap-1.5 text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">
           <span class="material-symbols-outlined animate-spin-slow">autorenew</span>          
