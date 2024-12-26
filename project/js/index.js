@@ -173,7 +173,7 @@ function displayImages() {
 		imgElement.style.objectFit = 'center';
 		imgElement.style.outline = '2px solid #e2e8f0'
 		imgElement.style.borderRadius = '0.375rem';
-		imgElement.className = 'w-full h-40 object-cover rounded-md hover:opacity-80 transition-opacity';
+		imgElement.className = 'w-full hover:opacity-80 transition-opacity';
 
 		const nameElement = document.createElement('p');
 		nameElement.textContent = celeb.name;
