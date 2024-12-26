@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="output.css" />
+    <title id="profile-page-title">Executive Managers</title>
+  </head>
+  <body class="font-inter relative bg-slate-50">
+    
+    <!-- Navbar -->
+    <div class="bg-slate-200 border-y border-gray-300 sticky top-0 z-20 p-3 flex items-center justify-between">
+      <span class="block w-36"><img src="images/logo.png" alt="Logo"></span>
+      <a href="index.html" class="text-blue-700 hover:underline text-sm">Back to Home</a>
+    </div>
+
+    <!-- Profile Details -->
+    <section class="p-4 flex flex-col items-center text-center space-y-3">
+      <img id="profile-img" src="" alt="Celebrity Image" class="w-64 h-64 object-cover rounded-full shadow-md">
+      <h1 id="profile-name" class="text-2xl font-bold text-blue-700"></h1>
+      <p id="profile-profession" class="text-lg text-gray-700"></p>
+      <p id="profile-age" class="text-md text-gray-500"></p>
+      <p id="profile-description" class="text-md text-gray-600 max-w-md"></p>
+    </section>
+
+    <div class="mt-3 mx-auto flex flex-col space-y-2 w-10/12">
+      <button class="text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Book Meet & Greet</button>
+      <button class="text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Buy Merchandise</button>
+      <button class="text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Membership Card Status</button>
+    </div>
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>
