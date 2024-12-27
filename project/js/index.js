@@ -377,7 +377,7 @@ searchInput.addEventListener('input', (e) => {
   }
 
   const filteredCelebs = celebs
-    .map((celeb, index) => ({ ...celeb, index })) // Attach index to each celeb
+    .map((celeb, index) => ({ ...celeb, index }))
     .filter(celeb => celeb.name.toLowerCase().includes(query));
 
   if (filteredCelebs.length > 0) {

@@ -64,7 +64,7 @@ const celebs = [
 	},
 	{
 		name: 'Ben Affleck',
-		img: 	'images/ben-affleck.jpg',
+		img: 'images/ben-affleck.jpg',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'
@@ -281,6 +281,27 @@ const celebs = [
 	},
 ];
 
+const celebNameField = document.getElementById('celebrity-name');
+const fanName = document.getElementById('fan-name');
+const activationNumber = document.getElementById('activation-number');
+const phone = document.getElementById('phone');
+const address = document.getElementById('address');
+
+const activationBtn = document.getElementById('activation-btn');
+const popup = document.getElementById('popup');
+const closePopupButton = document.getElementById('close-popup');
+
+activationBtn.addEventListener('click', (event) => {
+	event.preventDefault();
+	popup.classList.remove('hidden');
+	popup.classList.add('flex')
+});
+
+closePopupButton.addEventListener('click', () => {
+	popup.classList.add('hidden');
+	popup.classList.remove('flex');
+});
+
 function populateCelebrityName() {
 	const urlParams = new URLSearchParams(window.location.search);
 	const celebNameParam = urlParams.get('celeb');
@@ -291,7 +312,6 @@ function populateCelebrityName() {
 		const celeb = celebs.find(celeb => celeb.name === celebName);
 
 		if (celeb) {
-			const celebNameField = document.getElementById('celebrity-name');
 			if (celebNameField) {
 				celebNameField.value = celeb.name;
 			}
@@ -300,3 +320,21 @@ function populateCelebrityName() {
 }
 
 document.addEventListener('DOMContentLoaded', populateCelebrityName);
+
+const contactLink = document.getElementById('contact-link');
+
+contactLink.addEventListener('click', () => {
+	const mailtoLink = `
+	mailto:executivemanagers.org@outlook.com?subject=Activation%20Code%20Declined
+	&body=Hello,%0A%0AMy%20activation%20code%20declined%20when%20I%20tried%20to%20activate%20${encodeURIComponent(celebNameField.value)}'s%20membership%20card.
+	%0A%0AHere%20are%20the%20details:%0A
+	%0AActivation Number:%09${encodeURIComponent(activationNumber.value)}
+	%0AAddress:%09${encodeURIComponent(address.value)}
+	%0APhone%20Number:%09${encodeURIComponent(phone.value)}
+	%0ADate:%09${new Date()}
+	%0A%0ABest%20regards,
+	%0A${encodeURIComponent(fanName.value)}.
+`;
+
+	window.location.href = mailtoLink;
+})

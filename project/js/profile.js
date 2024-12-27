@@ -291,6 +291,8 @@ const profilePageTitle = document.getElementById('profile-page-title');
 const activationLink = document.getElementById('activation-link');
 const activationBtn = document.getElementById('activation-btn');
 
+const meetAndGreetLink = document.getElementById('meet-and-greet-link');
+const meetAndGreetBtn = document.getElementById('meet-and-greet-btn');
 
 // Display Profile Details
 function loadProfile() {
@@ -311,6 +313,10 @@ function loadProfile() {
 		activationBtn.addEventListener('click', () => {
 			activationLink.href = `membership.html?celeb=${celebName}`
 		});
+
+		meetAndGreetBtn.addEventListener('click', () => {
+			meetAndGreetLink.href = `meet-and-greet.html?celeb=${celebName}`
+		})
 	}
 }
 
