@@ -14,16 +14,16 @@
   <body class="font-inter relative bg-gray-100 tracking-wide">
     
     <!--Mobile sidebar-->
-    <div id="sidebar" class="flex items-start flex-col space-y-2 px-6 top-0 left-0 z-30 w-10/12 sm:w-80 h-2/3 box-border bg-slate-200 fixed transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div id="sidebar" class="flex items-start flex-col space-y-2 px-6 top-0 left-0 z-30 w-10/12 sm:w-80 h-full box-border bg-slate-200 fixed transform -translate-x-full transition-transform duration-300 ease-in-out">
       <span class="block w-36 h-16 mt-3"><img src="images/logo.png" alt="Executive Managers Logo"></span>
      
-      <a href="#image-gallery"><p class="text-blue-700 text-sm font-bold">Celebrities</p></a>
-      <p class="text-blue-700 text-sm font-bold">Services</p>
-      <a href="membership.html"><p class="text-blue-700 text-sm font-bold">Membership Card</p></a>
-      <p class="text-blue-700 text-sm font-bold">Promotion</p>
-      <p class="text-blue-700 text-sm font-bold">Account</p>
-      <p class="text-blue-700 text-sm font-bold">Pricing</p>
-      <p class="text-blue-700 text-sm font-bold">Settings</p>
+      <a href="#search-bar"><p class="text-blue-700 text-base font-bold">Celebrities</p></a>
+      <p class="text-blue-700 text-base font-bold">Services</p>
+      <a href="membership.html"><p class="text-blue-700 text-base font-bold">Membership Card</p></a>
+      <p class="text-blue-700 text-base font-bold">Promotion</p>
+      <p class="text-blue-700 text-base font-bold">Account</p>
+      <p class="text-blue-700 text-base font-bold">Pricing</p>
+      <p class="text-blue-700 text-base font-bold">Settings</p>
 
       <button class="text-white bg-blue-700 py-3.5 rounded-xl hover:bg-blue-900 text-base w-10/12">Book a Celebrity</button>
     </div>
@@ -39,7 +39,7 @@
     </div>
 
     <!-- Search Bar Section -->
-    <div class="flex items-center bg-white rounded-xl shadow-md p-2 mx-3 mt-3">
+    <div id="search-bar" class="flex items-center bg-white rounded-xl shadow-md p-2 mx-3 mt-3">
       <input 
         type="text" 
         placeholder="Search for celebrities..." 
@@ -185,7 +185,7 @@
 
         <!-- Quick Links -->
         <div class="flex flex-col sm:flex-row space-y-1 ml-2 sm:space-y-0 sm:space-x-6 text-blue-700 tracking-normal">
-          <a href="#image-gallery" class="hover:text-blue-900">Celebrities</a>
+          <a href="#search-bar" class="hover:text-blue-900">Celebrities</a>
           <a href="membership.html" class="hover:text-blue-900">Membership Card</a>
           <a href="" class="hover:text-blue-900">Pricing</a>
           <a href="" class="hover:text-blue-900">Promotion</a>

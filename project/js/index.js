@@ -358,6 +358,7 @@ nextBtn?.addEventListener('click', () => {
 	if ((currentPage * imagesPerPage) < celebs.length) {
 		currentPage++;
 		displayImages();
+		window.location.href = 'index.html#search-bar'
 	}
 });
 
