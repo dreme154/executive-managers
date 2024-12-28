@@ -713,6 +713,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -881,6 +885,16 @@ video {
 
 .animate-spin-slow {
   animation: spinSlow 6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {
@@ -1088,6 +1102,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1186,12 +1204,21 @@ video {
   line-height: 1rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .tracking-normal {
@@ -1261,6 +1288,10 @@ video {
 
 .underline-offset-2 {
   text-underline-offset: 2px;
+}
+
+.underline-offset-1 {
+  text-underline-offset: 1px;
 }
 
 .shadow-lg {

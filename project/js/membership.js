@@ -292,6 +292,7 @@ const formInputs = [celebNameField, fanName, activationNumber, phone, address]
 const activationBtn = document.getElementById('activation-btn');
 const popup = document.getElementById('popup');
 const closePopupButton = document.getElementById('close-popup');
+const loadingSpinner = document.getElementById('loading-spinner');
 
 activationBtn.addEventListener('click', (event) => {
 	event.preventDefault();
@@ -302,8 +303,18 @@ activationBtn.addEventListener('click', (event) => {
 			return;
 		}
 	}
-	popup.classList.remove('hidden');
-	popup.classList.add('flex')
+
+	loadingSpinner.classList.remove('hidden');
+	loadingSpinner.classList.add('flex')
+	
+	// Display pop-up after 6 seconds
+	setTimeout(() => {
+		loadingSpinner.classList.add('hidden');
+		loadingSpinner.classList.remove('flex');
+
+		popup.classList.remove('hidden');
+		popup.classList.add('flex')
+	}, 6000);
 });
 
 closePopupButton.addEventListener('click', () => {

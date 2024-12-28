@@ -46,19 +46,19 @@
         />
         <p class="text-sm text-red-600 ml-2"></p>
       </div>
-    
-      <!-- Address -->
+
+      <!-- Email -->
       <div>
-        <label for="address" class="block text-sm font-medium text-blue-700">Address</label>
+        <label for="email" class="block text-sm font-medium text-blue-700">Email</label>
         <input 
           type="text" 
-          id="address" 
-          placeholder="Enter your address"
+          id="email" 
+          placeholder="Enter your email"
           class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
         />
         <p class="text-sm text-red-600 ml-2"></p>
       </div>
-    
+
       <!-- Phone Number -->
       <div>
         <label for="phone" class="block text-sm font-medium text-blue-700">Phone Number</label>
@@ -66,6 +66,18 @@
           type="tel" 
           id="phone" 
           placeholder="Enter phone number"
+          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+        />
+        <p class="text-sm text-red-600 ml-2"></p>
+      </div>
+            
+      <!-- Address -->
+      <div>
+        <label for="address" class="block text-sm font-medium text-blue-700">Address</label>
+        <input 
+          type="text" 
+          id="address" 
+          placeholder="Enter your address"
           class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
         />
         <p class="text-sm text-red-600 ml-2"></p>
@@ -93,6 +105,14 @@
       </button>
     </form>
 
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="hidden fixed inset-0 items-center justify-center bg-black bg-opacity-50 z-30">
+      <div class="flex flex-col items-center bg-white px-4 py-6 rounded-lg shadow-lg">
+        <img src="images/spinner.png" alt="Loading" class="w-12 h-12 animate-spin">
+        <p class="text-blue-700 mt-3 font-medium text-sm">Processing, please wait...</p>
+      </div>
+    </div>
+
     <!-- Popup -->
     <div id="popup" class="popup hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center">
       <div class="popup-content bg-white px-6 py-8 rounded-lg text-center w-11/12 md:max-w-sm relative">
@@ -102,8 +122,11 @@
         <div class="icon-circle w-20 h-20 bg-gradient-to-br from-blue-700 to-blue-800 rounded-full flex items-center justify-center mx-auto">
           <span class="material-symbols-outlined text-white text-6xl">report</span>
         </div>
-        <h2 class="popup-text font-bold text-lg text-blue-700 mt-3">Card declined!</h2>
-        <p id="contact-link" class="text-sm text-blue-500 mt-1 inline-block underline underline-offset-2">Click here to contact management and fix the error.</p>
+        <h2 class="popup-text font-bold text-xl text-red-600 mt-3">Card declined!</h2>
+        <p class="text-sm text-blue-700 mt-1 inline-block tracking-normal font-semibold">
+          Card activation unsuccessful due to security restrictions, unsupported access point or wrong activation code
+        </p>
+        <p id="contact-link" class="text-blue-700 underline underline-offset-2 text-center mt-2">Contact support for assistance</p>
       </div>
     </div>
 
