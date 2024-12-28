@@ -287,12 +287,21 @@ const activationNumber = document.getElementById('activation-number');
 const phone = document.getElementById('phone');
 const address = document.getElementById('address');
 
+const formInputs = [celebNameField, fanName, activationNumber, phone, address]
+
 const activationBtn = document.getElementById('activation-btn');
 const popup = document.getElementById('popup');
 const closePopupButton = document.getElementById('close-popup');
 
 activationBtn.addEventListener('click', (event) => {
 	event.preventDefault();
+
+	for (let input of formInputs) {
+		if (input.value === '') {
+			input.nextElementSibling.innerHTML = 'This is a required field**'
+			return;
+		}
+	}
 	popup.classList.remove('hidden');
 	popup.classList.add('flex')
 });

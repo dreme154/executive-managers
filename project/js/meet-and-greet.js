@@ -305,22 +305,31 @@ const sendRequestBtn = document.getElementById('send-request-btn');
 sendRequestBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
-  const celebrityName = encodeURIComponent(document.getElementById('celebrity-name').value);
-  const fanName = encodeURIComponent(document.getElementById('fan-name').value);
-  const phoneNumber = encodeURIComponent(document.getElementById('phone-number').value);
-  const membershipId = encodeURIComponent(document.getElementById('membership-id').value);
-  const address = encodeURIComponent(document.getElementById('address').value);
-  const reason = encodeURIComponent(document.getElementById('reason').value);
+  const celebrityName = document.getElementById('celebrity-name');
+  const fanName = document.getElementById('fan-name');
+  const phoneNumber = document.getElementById('phone-number');
+  const membershipId = document.getElementById('membership-id');
+  const address = document.getElementById('address');
+  const reason = document.getElementById('reason');
+
+	const formInputs = [celebrityName, fanName, phoneNumber, membershipId, address, reason]
+	
+	for (let input of formInputs) {
+		if (input.value === '') {
+			input.nextElementSibling.innerHTML = 'This is a required field**'
+			return;
+		}
+	}
 
   const mailtoLink = `
     mailto:executivemanagers.org@outlook.com?subject=Meet%20and%20Greet%20Request
-    &body=Hello,%0A%0AI'd%20like%20to%20request%20a%20meet%20and%20greet%20with%20${celebrityName}.
+    &body=Hello,%0A%0AI'd%20like%20to%20request%20a%20meet%20and%20greet%20with%20${encodeURIComponent(celebrityName.value)}.
     %0A%0AHere%20are%20my%20personal%20details:%0A
-    %0AName:%09${fanName}
-    %0APhone Number:%09${phoneNumber}
-    %0AAddress:%09${address}
-    %0AMembership%20ID:%09${membershipId}
-    %0AReason:%09${reason}
+    %0AName:%09${encodeURIComponent(fanName.value)}
+    %0APhone Number:%09${encodeURIComponent(phoneNumber.value)}
+    %0AAddress:%09${encodeURIComponent(address.value)}
+    %0AMembership%20ID:%09${encodeURIComponent(membershipId.value)}
+    %0AReason:%09${encodeURIComponent(reason.value)}
     %0ADate:%09${new Date()}
     %0A%0AThank%20you!
   `;
