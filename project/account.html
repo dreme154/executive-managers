@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="output.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <title>Success</title>
+    <title>Account</title>
   </head>
   <body class="font-inter relative bg-slate-50">
     
@@ -19,17 +19,6 @@
       <span class="block w-36"><img src="images/logo.png" alt="Logo"></span>
       <a href="index.html" class="text-blue-700 hover:underline text-sm">Back to Home</a>
     </div>
-
-    <!-- Confirmation -->
-    <section class="p-2 my-8 text-center">
-      <!-- Sticker -->
-      <div class="flex justify-center mb-3">
-        <img src="images/send-mail.png" alt="Autograph Sticker" class="w-auto h-60">
-      </div>
-      
-      <!-- Message -->
-      <p id="confirmation-message" class="text-blue-700 mb-6 text-sm"></p>
-    </section>
 
     <!-- Footer -->
     <footer class="bg-slate-200 py-6 mt-12 bottom-0">
@@ -72,18 +61,5 @@
         <p>&copy; 2024 Executive Managers Inc. All rights reserved.</p>
       </div>
     </footer>
-
-    <script type="text/javascript">
-      const urlParams = new URLSearchParams(window.location.search);
-      const reason = urlParams.get('reason');
-      const message = document.getElementById('confirmation-message');
-
-      if (reason === 'membership') {
-        message.innerText = `Management has been informed of your card activation issues. An email
-          will be sent to you shortly. Thanks for your patience.`
-      } else {
-        message.innerHTML = `<p>Your request for a meet-and-greet with <b>${reason}</b> is being processed. An email will be sent to you shortly.</p>`
-      }
-    </script>
   </body>
 </html>
