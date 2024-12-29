@@ -21,14 +21,6 @@ module.exports = {
           '0%': { transform: 'scale(0.9)', opacity: 1 },
           '50%': { transform: 'scale(1.1)', opacity: 0.8 },
           '100%': { transform: 'scale(0.9)', opacity: 1 },
-        },
-        drawSignature: {
-          '0%': {
-            'stroke-dasharray': '0',
-          },
-          '100%': {
-            'stroke-dasharray': '150',
-          }
         }
       },
       animation: {

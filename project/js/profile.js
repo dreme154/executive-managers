@@ -253,7 +253,7 @@ const celebs = [
 	},
 	{
 		name: 'Hugh Jackman',
-		img: 'images/hugh-jackman.webp',
+		img: 'images/hugh-jackman.jpg',
 		profession: 'Actor',
 		age: 50,
 		profile: 'Award-winning actor'

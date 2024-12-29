@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="output.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <title id="profile-page-title">Executive Managers</title>
+    <title id="profile-page-title">Success</title>
   </head>
   <body class="font-inter relative bg-slate-50">
     
@@ -20,30 +20,19 @@
       <a href="index.html" class="text-blue-700 hover:underline text-sm">Back to Home</a>
     </div>
 
-    <!-- Profile Details -->
-    <section class="p-4 flex flex-col items-center text-center space-y-3">
-      <img id="profile-img" src="" alt="Celebrity Image" class="w-64 h-64 object-cover rounded-full shadow-md">
-      <h1 id="profile-name" class="text-2xl font-bold text-blue-700"></h1>
-      <p id="profile-profession" class="text-lg text-gray-800"></p>
-      <p id="profile-age" class="text-md text-blue-600"></p>
-      <p id="profile-description" class="text-md text-gray-600 max-w-md"></p>
+    <!-- Confirmation -->
+    <section class="p-3 my-8 text-center">
+      <!-- Sticker -->
+      <div class="flex justify-center mb-3">
+        <img src="images/send-mail.png" alt="Autograph Sticker" class="w-auto h-60">
+      </div>
+      
+      <!-- Message -->
+      <p id="confirmation-message" class="text-blue-700 mb-6 text-sm"></p>
     </section>
 
-    <!-- CTA Buttons -->
-    <div class="mt-3 mx-auto flex flex-col space-y-2 w-10/12">
-      <a href="" id="meet-and-greet-link">
-        <button id="meet-and-greet-btn" class="w-full text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Book Meet & Greet</button>
-      </a>      
-      
-      <button class="text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Buy Merchandise</button>
-      
-      <a href="" id="activation-link">
-        <button id="activation-btn" class="w-full text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Membership Card Status</button>
-      </a>
-    </div>
-
     <!-- Footer Section -->
-    <footer class="bg-slate-200 py-6 mt-12">
+    <footer class="bg-slate-200 py-6 mt-12 bottom-0">
       <div class="container mx-auto px-6 flex flex-col items-start sm:flex-row justify-between space-y-4 sm:space-y-0">
 
         <!-- Logo -->
@@ -84,6 +73,17 @@
       </div>
     </footer>
 
-    <script src="js/profile.js"></script>
+    <script type="text/javascript">
+      const urlParams = new URLSearchParams(window.location.search);
+      const reason = urlParams.get('reason');
+      const message = document.getElementById('confirmation-message');
+
+      if (reason === 'membership') {
+        message.innerText = `Management has been informed of your card activation issues. An email
+          will be sent to you shortly. Thanks for your patience.`
+      } else {
+        message.innerHTML = `<p>Your request for a meet-and-greet with <b>${reason}</b> is being processed. An email will be sent to you shortly.</p>`
+      }
+    </script>
   </body>
 </html>
