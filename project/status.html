@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="output.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <title id="profile-page-title">Executive Managers</title>
+    <title>Success</title>
   </head>
-  <body class="font-inter relative bg-slate-50 tracking-wide">
+  <body class="font-inter relative bg-slate-50">
     
     <!-- Navbar -->
     <div class="bg-slate-200 border-y border-gray-300 sticky top-0 z-20 p-3 flex items-center justify-between">
@@ -20,30 +20,47 @@
       <a href="index.html" class="text-blue-700 hover:underline text-sm">Back to Home</a>
     </div>
 
-    <!-- Profile Details -->
-    <section class="p-4 flex flex-col items-center text-center space-y-3">
-      <img id="profile-img" src="" alt="Celebrity Image" class="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-md">
-      <h1 id="profile-name" class="text-2xl font-bold text-blue-700 md:text-3xl"></h1>
-      <p id="profile-profession" class="text-lg text-gray-800 md:text-xl"></p>
-      <p id="profile-age" class="text-md text-blue-600 md:text-lg"></p>
-      <p id="profile-description" class="text-md text-gray-600 max-w-xl md:text-lg"></p>
-    </section>
-
-    <!-- CTA Buttons -->
-    <div class="mt-3 mx-auto flex flex-col space-y-2 w-10/12 md:max-w-sm">
-      <a href="" id="meet-and-greet-link">
-        <button id="meet-and-greet-btn" class="w-full text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Book Meet & Greet</button>
-      </a>      
-      
-      <button class="text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Buy Merchandise</button>
-      
-      <a href="" id="activation-link">
-        <button id="activation-btn" class="w-full text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">Membership Card Status</button>
-      </a>
-    </div>
+    <!-- Status -->
+    <section class="max-w-xl mx-2 md:mx-auto px-4 py-8 space-y-6">
+      <div class="text-center mb-6">
+        <h1 class="text-4xl font-bold text-blue-700">Membership Status</h1>
+        <p class="text-gray-600 mt-2 text-sm">Please enter your Membership ID and Activation Number to proceed with the activation process.</p>
+      </div>
+    
+      <div class="bg-white shadow-lg rounded-lg p-6 max-w-md mx-auto">
+        <!-- Membership ID -->
+        <div class="mb-4">
+          <label for="membership-id" class="block text-sm font-medium text-blue-700">Membership ID</label>
+          <input 
+            type="tel" 
+            id="membership-id" 
+            placeholder="Enter membership ID"
+            class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+          <p class="text-sm text-red-600 ml-2"></p>
+        </div>
+    
+        <!-- Activation Number -->
+        <div class="mb-6">
+          <label for="activation-number" class="block text-sm font-medium text-blue-700">Activation Number</label>
+          <input 
+            type="tel" 
+            id="activation-number" 
+            placeholder="Enter activation number"
+            class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+          <p class="text-sm text-red-600 ml-2"></p>
+        </div>
+    
+        <!-- Proceed Button -->
+        <button id="send-request-btn" class="mt-4 w-full text-white bg-blue-700 px-6 py-3 rounded-xl hover:bg-blue-900 text-base font-medium">
+          Proceed
+        </button>
+      </div>
+    </section>    
 
     <!-- Footer -->
-    <footer class="bg-slate-200 py-6 mt-12">
+    <footer class="bg-slate-200 py-6 mt-12 bottom-0">
       <div class="container mx-auto px-6 flex flex-col items-start sm:flex-row justify-between space-y-4 sm:space-y-0">
 
         <!-- Logo -->
@@ -83,7 +100,5 @@
         <p>&copy; 2024 Executive Managers Inc. All rights reserved.</p>
       </div>
     </footer>
-
-    <script src="js/profile.js"></script>
   </body>
 </html>
