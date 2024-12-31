@@ -14,6 +14,13 @@ const celebs = [
 		profile: "Channing Tatum is an American actor, producer, and former dancer best known for his roles in blockbuster films. He gained widespread recognition with Step Up (2006), showcasing his dance skills, and later starred in hit movies like 21 Jump Street, Magic Mike, and Foxcatcher. Tatum’s portrayal of a male stripper in Magic Mike was inspired by his real-life experiences and became a cultural phenomenon, spawning a sequel and a stage show. His blend of charm, humor, and physicality has cemented him as one of Hollywood's most bankable and versatile stars."
 	},
 	{
+		name: 'Neville James Martin',
+		img: 'images/neville-martin.jpg',
+		profession: 'Musician, Guitarist',
+		age: "Been a performer for 13 years",
+		profile: "Neville James Martin is a Blues based guitarist from Belfast N. Ireland. After having been a guitar instructor for many years he gained much attention across various social media platforms during the COVID-19 pandemic in 2021. Martin's style of playing has been compared to that of David Gilmour, Eric Clapton, Gary Moore and BB King."
+	},	
+	{
 		name: 'Tessa Thompson',
 		img: 'images/tessa-thompson.jpg',
 		profession: 'Actress, Producer',
