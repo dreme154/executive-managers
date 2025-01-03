@@ -131,11 +131,7 @@ const celebs = [
 		profession: 'Actor, Film Producer',
 		age: '49 (born January 5, 1975)',
 		profile: "Bradley Charles Cooper is an American actor and filmmaker. He is the recipient of various accolades, including a British Academy Film Award and two Grammy Awards. In addition, he has been nominated for twelve Academy Awards, six Golden Globe Awards, and a Tony Award."
-	},
-	{
-		name: 'Channing Tatum',
-		img: 'images/channing-tatum.jpg',
-		profession: 'Actor, Producer, Dancer',
+	},	
 	{
 		name: 'Quavo',
 		img: 'images/quavo.jpg',
