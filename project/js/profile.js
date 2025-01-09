@@ -15,7 +15,7 @@ const celebs = [
 	},
 	{
 		name: 'Neville James Martin',
-		img: 'images/neville-martin.jpg',
+		img: 'images/neville-martin.jpg',				
 		profession: 'Musician, Guitarist',
 		age: "Been a performer for 13 years",
 		profile: "Neville James Martin is a Blues based guitarist from Belfast N. Ireland. After having been a guitar instructor for many years he gained much attention across various social media platforms during the COVID-19 pandemic in 2021. Martin's style of playing has been compared to that of David Gilmour, Eric Clapton, Gary Moore and BB King."
@@ -103,6 +103,13 @@ const celebs = [
 		profession: 'Actor, Producer',
 		age: '41 (born May 5, 1983)',
 		profile: "Henry Cavill is an English actor widely known for playing Superman in the DC Extended Universe films, starting with Man of Steel (2013). He gained international recognition for his portrayal of the iconic superhero, appearing in films like Batman v Superman: Dawn of Justice (2016) and Justice League (2017). Cavill is also famous for his role as Geralt of Rivia in the hit Netflix series The Witcher, based on the popular book series. His other notable work includes Mission: Impossible – Fallout (2018) and The Tudors (2007-2010). Cavill is known for his intense commitment to roles and physical transformation."
+	},
+	{
+		name: 'Christopher A. J. Martin',
+		img: 'images/chris-marti.jpg',
+		profession: 'singer, songwriter, musician, and producer',
+		age: '47 (born March 2, 1977)',
+		profile: "Christopher Anthony John Martin is an English singer, songwriter, musician, and producer. He is best known as the lead singer of the British rock band Coldplay. The band achieved fame in 2000 with their album Parachutes, which included the popular single 'Yellow'. Martin is also known for his collaborations with artists like Jay-Z and Avicii."
 	},
 	{
 		name: 'Demi Moore',
