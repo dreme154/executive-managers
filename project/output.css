@@ -1321,6 +1321,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .text-center {
   text-align: center;
 }
