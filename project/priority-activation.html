@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Activate Priority Pass</title>
+  </head>
+  <body class="font-inter relative bg-slate-50">
+    
+    <!-- Navbar -->
+    <div class="bg-slate-200 border-y border-gray-300 sticky top-0 z-20 p-3 flex items-center justify-between">
+      <span class="block w-36"><img src="images/logo.png" alt="Logo"></span>
+      <a href="priority-pass.html" class="text-blue-700 hover:underline text-base mr-2">Go Back</a>
+    </div>
+
+    <!-- Activation Form -->
+    <section class="max-w-xl mx-2 md:mx-auto px-4 py-8 space-y-6">
+      <h1 class="text-center mb-6 text-3xl font-bold text-red-600">Priority Pass Activation</h1>
+    
+      <div class="bg-white shadow-lg rounded-lg p-6 max-w-md mx-auto">
+        <!-- Priority Clearance Number -->
+        <div class="mb-4">
+          <label for="priority-clearance-number" class="block text-sm font-medium text-red-600">Priority Clearance Number</label>
+          <input 
+            type="text" 
+            id="priority-clearance-number" 
+            placeholder="Enter priority clearance number"
+            class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500"
+          />
+          <p class="text-sm text-red-600 ml-2"></p>
+        </div>
+    
+        <!-- Membership Card Number -->
+        <div class="mb-6">
+          <label for="membership-card-number" class="block text-sm font-medium text-red-600">Membership Card Number</label>
+          <input 
+            type="text" 
+            id="membership-card-number" 
+            placeholder="Enter membership card number"
+            class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500"
+          />
+          <p class="text-sm text-red-600 ml-2"></p>
+        </div>
+    
+        <!-- Activate Button -->
+        <button id="activate-btn" class="w-full flex items-center justify-center gap-1.5 text-white bg-red-600 px-6 py-4 rounded-xl hover:bg-red-700 text-base">
+          <span class="material-symbols-outlined animate-bounceY">bolt</span>
+          Activate Priority Pass
+        </button>
+      </div>
+    </section>    
+
+    <!-- Popup -->
+    <div id="popup" class="popup hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center">
+      <div class="popup-content bg-white px-6 py-8 rounded-lg text-center w-11/12 md:max-w-sm relative">
+        
+        <button id="close-popup" class="absolute top-2 right-4 text-red-600 hover:text-gray-800 text-4xl">&times;</button>
+    
+        <div class="icon-circle w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto">
+          <span class="material-symbols-outlined text-white text-6xl">report</span>
+        </div>
+
+        <h2 class="popup-text font-bold text-xl text-red-600 mt-3">Activation declined!</h2>
+        <p class="text-sm text-gray-600 mt-1 inline-block tracking-normal font-semibold">
+          Unfortunately, we were unable to activate your <b>Priority Pass</b> at this time. Our system has flagged an issue that requires further verification.
+          Please contact our dedicated support team to resolve this issue.
+        </p>
+        <a href="contact.html?reason=priority-activation">
+          <p class="cursor-pointer text-red-600 underline underline-offset-2 text-center mt-2">Contact support for assistance</p>
+        </a>
+      </div>
+    </div>    
+
+    <!-- Footer -->
+    <footer class="bg-slate-200 py-6 mt-12 bottom-0">
+      <div class="container mx-auto px-6 flex flex-col items-start sm:flex-row justify-between space-y-4 sm:space-y-0">
+
+        <!-- Logo -->
+        <div class="flex items-center justify-start space-x-4">
+          <img src="images/logo.png" alt="Executive Managers Logo" class="w-44 h-auto">
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex flex-col sm:flex-row space-y-1 ml-2 sm:space-y-0 sm:space-x-6 text-blue-700 tracking-normal">
+          <a href="index.html#search-bar" class="hover:text-blue-900">Celebrities</a>
+          <a href="membership.html" class="hover:text-blue-900">Membership Card</a>
+          <a href="pricing.html" class="hover:text-blue-900">Pricing</a>
+          <a href="" class="hover:text-blue-900">Promotion</a>
+          <a href="account.html" class="hover:text-blue-900">Account</a>
+          <a href="settings.html" class="hover:text-blue-900">Settings</a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="flex space-x-3 text-blue-700 ml-2">
+          <a href="#" class="hover:text-blue-900">
+            <img src="images/facebook.png" alt="Facebook" class="w-8 h-8 outline outline-1 outline-slate-400 rounded-lg">
+          </a>
+          <a href="#" class="hover:text-blue-900">
+            <img src="images/twitter.png" alt="Twitter" class="w-8 h-8 outline outline-1 outline-slate-400 rounded-lg">
+          </a>
+          <a href="#" class="hover:text-blue-900">
+            <img src="images/instagram.png" alt="Instagram" class="w-8 h-8 outline outline-1 outline-slate-400 rounded-xl">
+          </a>
+          <a href="#" class="hover:text-blue-900">
+            <img src="images/linkedin.png" alt="LinkedIn" class="w-8 h-8 outline outline-1 outline-slate-400 rounded-lg">
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="text-center mt-6 text-gray-800 text-sm mx-3 tracking-tight">
+        <p>&copy; 2024 Executive Managers Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      const activateBtn = document.getElementById('activate-btn');
+      const popup = document.getElementById('popup');
+      const closePopupButton = document.getElementById('close-popup');
+
+      const priorityNumber = document.getElementById('priority-clearance-number');
+      const membershipId = document.getElementById('membership-card-number');
+      const formInputs = [priorityNumber, membershipId];
+
+      // Display popup
+      activateBtn.addEventListener('click', () => {
+        event.preventDefault();
+
+        for (let input of formInputs) {
+          if (input.value === '') {
+            input.nextElementSibling.innerHTML = 'This is a required field**'
+            return;
+          }
+        };
+
+        popup.classList.remove('hidden');
+        popup.classList.add('flex')
+      });
+
+      // Close popup
+      closePopupButton.addEventListener('click', () => {
+        popup.classList.add('hidden');
+        popup.classList.remove('flex');
+      });
+    </script>    
+  </body>
+</html>

@@ -79,8 +79,13 @@
       const message = document.getElementById('confirmation-message');
 
       if (reason === 'membership') {
-        message.innerText = `Management has been informed of your card activation issues. An email
-          will be sent to you shortly. Thanks for your patience.`
+        message.innerText = `Management has been informed of your card activation issues. An email will be sent to you shortly. Thanks for your patience.`
+      } else if (reason === 'priority-pass') {
+        message.innerText = `Your request is being processed. Your priority pass will be sent to you shortly via email. Thank you!`
+      } else if (reason === 'security-clearance') {
+        message.innerText = `Your request for security clearance number is being processed. An email will be sent to you shortly. Thank you!`
+      } else if (reason === 'priority-activation') {
+        message.innerText = `Your request is being processed. You will be informed of the next steps to resolve your priority pass activation issues via email. Thank you!`
       } else {
         message.innerHTML = `<p>Your request for a meet-and-greet with <b>${reason}</b> is being processed. An email will be sent to you shortly.</p>`
       }
