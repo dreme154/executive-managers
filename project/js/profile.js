@@ -14,6 +14,13 @@ const celebs = [
 		profile: "Channing Tatum is an American actor, producer, and former dancer best known for his roles in blockbuster films. He gained widespread recognition with Step Up (2006), showcasing his dance skills, and later starred in hit movies like 21 Jump Street, Magic Mike, and Foxcatcher. Tatum’s portrayal of a male stripper in Magic Mike was inspired by his real-life experiences and became a cultural phenomenon, spawning a sequel and a stage show. His blend of charm, humor, and physicality has cemented him as one of Hollywood's most bankable and versatile stars."
 	},
 	{
+		name: 'Brantley Gilbert',
+		img: 'images/brantly-gilbert.jpg',
+		profession: 'Country Rock Singer, Songwritter, Record Producer',
+		age: '39 (born January 20, 1985)',
+		profile: "Brantley Keith Gilbert is an American country rock singer, songwriter and record producer from Jefferson, Georgia. He was originally signed to Colt Ford's label, Average Joes Entertainment, where he released Modern Day Prodigal Son and Halfway to Heaven."
+	},
+	{
 		name: 'Neville James Martin',
 		img: 'images/neville-martin.jpg',				
 		profession: 'Musician, Guitarist',
