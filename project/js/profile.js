@@ -312,7 +312,7 @@ const celebs = [
 		img: 'images/leo-wu.jpg',
 		profession: 'Actor' ,
 		age: '25 (born December 26, 1999)',
-		profile: "Leo Wu, is a Chinese actor. He started appearing in commercials at the age of three. In 2007, he made his acting debut as Nezha (https://en.m.wikipedia.org/wiki/Nezha) in the series The Legend and the Hero (https://en.m.wikipedia.org/wiki/The_Legend_and_the_Hero).[2] (https://en.m.wikipedia.org/wiki/The_Legend_and_the_Hero) He is known for his supporting roles in Nirvana in Fire (https://en.m.wikipedia.org/wiki/Nirvana_in_Fire) (2015) and The Whirlwind Girl (https://en.m.wikipedia.org/wiki/The_Whirlwind_Girl) (2015) and for his starring roles in Fight Breaks Sphere (https://en.m.wikipedia.org/wiki/Battle_Through_the_Heavens) (2018), Tomb of the Sea (2018), The Long Ballad (https://en.m.wikipedia.org/wiki/The_Long_Ballad) (2021), and Love like The Galaxy (https://en.m.wikipedia.org/wiki/Love_Like_the_Galaxy) (2022).[3] Wu ranked 63rd on Forbes (https://en.m.wikipedia.org/wiki/Forbes) China Celebrity 100 (https://en.m.wikipedia.org/wiki/Forbes_China_Celebrity_100) list in 2017, 29th in 2019 and 47th in 2020."
+		profile: "Leo Wu, is a Chinese actor. He started appearing in commercials at the age of three. In 2007, he made his acting debut as Nezha in the series The Legend and the Hero.[2] He is known for his supporting roles in Nirvana in Fire (2015) and The Whirlwind Girl (2015) and for his starring roles in Fight Breaks Sphere (2018), Tomb of the Sea (2018), The Long Ballad (2021), and Love like The Galaxy (2022).[3] Wu ranked 63rd on Forbes China Celebrity 100 list in 2017, 29th in 2019 and 47th in 2020."
 	},
 	{
 		name: 'Chris Pratt',
