@@ -327,6 +327,13 @@ const celebs = [
 		profile: "Leo Wu, is a Chinese actor. He started appearing in commercials at the age of three. In 2007, he made his acting debut as Nezha in the series The Legend and the Hero.[2] He is known for his supporting roles in Nirvana in Fire (2015) and The Whirlwind Girl (2015) and for his starring roles in Fight Breaks Sphere (2018), Tomb of the Sea (2018), The Long Ballad (2021), and Love like The Galaxy (2022).[3] Wu ranked 63rd on Forbes China Celebrity 100 list in 2017, 29th in 2019 and 47th in 2020."
 	},
 	{
+		name: 'kim Nam-joon',
+		img: 'images/kim_Nam-joon.jpg',
+		profession: 'rapper, songwriter, and record producer', 
+		age: '30 (born September 12, 1994)',
+		profile: "Kim Nam-joon, known professionally as RM (formerly Rap Monster), is a South Korean rapper, songwriter, and record producer. He is the leader of South Korean boy band BTS, under Big Hit Entertainment. Born in Seoul and raised in Ilsan, RM began his music career in the underground Korean hip-hop scene as a teenager, going by the name Runch Randa. He joined Big Hit in 2010, and debuted as part of BTS in June 2013."
+	},
+	{
 		name: 'Chris Pratt',
 		img: 'images/chris-pratt.webp',
 		profession: 'Actor, Producer',
