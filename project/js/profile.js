@@ -266,6 +266,13 @@ const celebs = [
 		profile: "Keith Urban is a New Zealand-born, Australian-raised country singer and songwriter known for his blend of country, rock, and pop influences. He has released numerous chart-topping albums, including Golden Road (2002) and Ripcord (2016). Urban’s distinct guitar playing and charismatic stage presence have earned him numerous accolades, including Grammy Awards and Country Music Association honors. He has also gained fame as a coach on The Voice (U.S.). With hits like 'Blue Ain\'t Your Color' and 'Days Go By,' Urban remains one of country music's most influential and successful artists."
 	},
 	{
+		name: 'Eminem',
+		img: 'images/Eminem.jpg',
+		profession: 'Rapper, songwriter, and record producer',
+		age: '52 (born October 17, 1972)',
+		profile: "Marshall Bruce Mathers III, known professionally as Eminem, is an American rapper, songwriter, and record producer. He is credited with popularizing hip-hop in Middle America and is widely regarded as one of the greatest rappers of all time."
+	},
+	{
 		name: 'Chris Young',
 		img: 'images/chris-young.jpg',
 		profession: 'Country Singer-Songwriter',
