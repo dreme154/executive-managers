@@ -168,6 +168,13 @@ const celebs = [
 		profile: "Tim McGraw is an American country music singer, songwriter, and actor who has become one of the most successful and beloved figures in modern country music. He has released multiple chart-topping albums, with songs like “Live Like You Were Dying” and “I Like It, I Love It” becoming fan favorites. McGraw has won numerous awards, including Grammy and CMA Awards, and has sold millions of albums worldwide. He is also known for his acting roles in films like The Blind Side (2009) and Friday Night Lights (2004). McGraw is also celebrated for his philanthropic efforts and his iconic collaborations with his wife, Faith Hill."
 	},
 	{
+		name: 'Michael Hartinger',
+		img: 'images/Michael-Hartinger.jpg',
+		profession: 'Volxmusik, Singer',
+		age: '42 (born, 1983)',
+		profile: "Michael Hartinger is a member of the voXXclub which he joined in 2012. They are currently touring across different countries and have about 15 Upcoming concerts"
+	},
+	{
 		name: 'Tom Burke',
 		img: 'images/tom-burke.webp',
 		profession: 'Actor',
