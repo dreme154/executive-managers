@@ -187,6 +187,13 @@ const celebs = [
 		profile: "Tom Burke is a British actor known for his compelling performances in both television and film. He is widely recognized for his portrayal of Cormoran Strike in the BBC series Strike, based on the novels by J.K. Rowling (under the pseudonym Robert Galbraith). Burke’s other notable roles include The Souvenir (2019) and The Musketeers (2014-2016). With a strong background in theater, he has been praised for his depth and versatility in complex characters. Burke’s talent and wide-ranging roles have made him one of the most respected actors in the UK."
 	},
 	{
+		name: 'Michael Hartinger',
+		img: 'images/Michael-Hartinger.jpg',
+		profession: 'Volxmusik, Singer',
+		age: '42 (born, 1983)',
+		profile: "Michael Hartinger is a member of the voXXclub which he joined in 2012. They are currently touring across different countries and have about 15 Upcoming concerts"
+	},
+	{
 		name: 'Zack Snyder',
 		img: 'images/zack-snyder.webp',
 		profession: 'Director, Producer, Writer',
