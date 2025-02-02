@@ -10,133 +10,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="output.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <title>Membership Card Activation</title>
+    <title>Celebrities</title>
   </head>
   <body class="font-inter relative bg-slate-50">
     
     <!-- Navbar -->
-    <div class="bg-slate-200 border-y border-gray-300 sticky top-0 z-20 p-3 flex items-center justify-between">
+    <div id="navbar" class="bg-slate-200 border-y border-gray-300 sticky top-0 z-20 p-3 flex items-center justify-between">
       <span class="block w-36"><img src="images/logo.png" alt="Logo"></span>
       <a href="index.html" class="text-blue-700 hover:underline text-sm">Back to Home</a>
     </div>
 
-    <div class="flex justify-center my-4">
-      <img src="images/membership-card.png" alt="Membership Cards" class="w-auto">
-    </div>
-
-    <!-- Activation Form -->
-    <form id="membership-form" class="max-w-md mt-5 mx-2 md:mx-auto bg-white p-6 rounded-lg shadow-lg space-y-4 border border-gray-200">
-      <h2 class="text-2xl font-bold text-blue-700 mb-4 text-center">Membership Card Activation</h2>
-      
-      <!-- Celebrity Name -->
-      <div>
-        <label for="celebrity-name" class="block text-sm font-medium text-blue-700">Celebrity Name</label>
-        <input 
-          type="text" 
-          id="celebrity-name" 
-          placeholder="Enter celebrity name"
-          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-        />
-        <p class="text-sm text-red-600 ml-2"></p>
-      </div>
-    
-      <!-- Fan Name -->
-      <div>
-        <label for="fan-name" class="block text-sm font-medium text-blue-700">Fan Name</label>
-        <input 
-          type="text" 
-          id="fan-name" 
-          placeholder="Enter your name"
-          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-        />
-        <p class="text-sm text-red-600 ml-2"></p>
+    <!-- Image Gallery -->
+    <section class="p-3 md:px-6 md:py-4 lg:px-10 lg:py-5">
+      <div id="image-gallery" class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
       </div>
 
-      <!-- Email -->
-      <div>
-        <label for="email" class="block text-sm font-medium text-blue-700">Email</label>
-        <input 
-          type="text" 
-          id="email" 
-          placeholder="Enter your email"
-          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-        />
-        <p class="text-sm text-red-600 ml-2"></p>
+      <!-- Pagination Controls -->
+      <div class="flex justify-center items-center mt-6 space-x-3">
+        <button id="prev-btn" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-900 disabled:opacity-50" disabled>Prev</button>
+        <span id="page-info" class="text-blue-700 font-medium">Page 1</span>
+        <button id="next-btn" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-900 disabled:opacity-50">Next</button>
       </div>
-
-      <!-- Phone Number -->
-      <div>
-        <label for="phone" class="block text-sm font-medium text-blue-700">Phone Number</label>
-        <input 
-          type="tel" 
-          id="phone" 
-          placeholder="Enter phone number"
-          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-        />
-        <p class="text-sm text-red-600 ml-2"></p>
-      </div>
-
-      <!-- Address -->
-      <div>
-        <label for="address" class="block text-sm font-medium text-blue-700">Address</label>
-        <input 
-          type="text" 
-          id="address" 
-          placeholder="Enter your address"
-          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-        />
-        <p class="text-sm text-red-600 ml-2"></p>
-      </div>
-    
-      <!-- Activation Number -->
-      <div>
-        <label for="activation-number" class="block text-sm font-medium text-blue-700">Activation Number</label>
-        <input 
-          type="text" 
-          id="activation-number" 
-          placeholder="Enter activation number"
-          class="mt-1 block w-full px-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-        />
-        <p class="text-sm text-red-600 ml-2"></p>
-      </div>
-    
-      <!-- Button -->
-      <button 
-        id="activation-btn"
-        class="w-full mt-4 text-white bg-blue-700 px-6 py-3 rounded-xl hover:bg-blue-900 text-base font-medium flex items-center justify-center gap-2"
-      >
-        <span class="material-symbols-outlined animate-bounceY">bolt</span>
-        Activate Card
-      </button>
-    </form>
-
-    <!-- Loading Spinner -->
-    <div id="loading-spinner" class="hidden fixed inset-0 items-center justify-center bg-black bg-opacity-50 z-30">
-      <div class="flex flex-col items-center bg-white px-4 py-6 rounded-lg shadow-lg">
-        <img src="images/spinner.png" alt="Loading" class="w-12 h-12 animate-spin">
-        <p class="text-blue-700 mt-3 font-medium text-sm">Processing, please wait...</p>
-      </div>
-    </div>
-
-    <!-- Popup -->
-    <div id="popup" class="popup hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center">
-      <div class="popup-content bg-white px-6 py-8 rounded-lg text-center w-11/12 md:max-w-sm relative">
-        
-        <button id="close-popup" class="absolute top-3 right-5 text-blue-700 hover:text-gray-800 text-4xl">&times;</button>
-    
-        <div class="icon-circle w-20 h-20 bg-gradient-to-br from-blue-700 to-blue-800 rounded-full flex items-center justify-center mx-auto">
-          <span class="material-symbols-outlined text-white text-6xl">report</span>
-        </div>
-        <h2 class="popup-text font-bold text-xl text-red-600 mt-3">Card declined!</h2>
-        <p class="text-sm text-blue-700 mt-1 inline-block tracking-normal font-semibold">
-          Card activation unsuccessful due to security restrictions, unsupported access point or wrong activation code
-        </p>
-        <p id="contact-link" class="cursor-pointer text-blue-700 underline underline-offset-2 text-center mt-2">Contact support for assistance</p>
-      </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-200 py-6 mt-12">
+    <footer class="bg-slate-200 py-6 mt-12 bottom-0">
       <div class="container mx-auto px-6 flex flex-col items-start sm:flex-row justify-between space-y-4 sm:space-y-0">
 
         <!-- Logo -->
@@ -146,8 +44,8 @@
 
         <!-- Quick Links -->
         <div class="flex flex-col sm:flex-row space-y-1 ml-2 sm:space-y-0 sm:space-x-6 text-blue-700 tracking-normal">
-          <a href="celebs.html" class="hover:text-blue-900">Celebrities</a>
-          <a href="#membership-form" class="hover:text-blue-900">Membership Card</a>
+          <a href="#navbar" class="hover:text-blue-900">Celebrities</a>
+          <a href="membership.html" class="hover:text-blue-900">Membership Card</a>
           <a href="pricing.html" class="hover:text-blue-900">Pricing</a>
           <a href="" class="hover:text-blue-900">Promotion</a>
           <a href="account.html" class="hover:text-blue-900">Account</a>
@@ -177,9 +75,7 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script type="text/javascript">
+    <script text="text/javascript">
       const celebs = [
         {
           name: 'Brad Pitt',
@@ -201,7 +97,7 @@
           profession: 'Musician, Guitarist',
           age: "Been a performer for 13 years",
           profile: "Neville James Martin is a Blues based guitarist from Belfast N. Ireland. After having been a guitar instructor for many years he gained much attention across various social media platforms during the COVID-19 pandemic in 2021. Martin's style of playing has been compared to that of David Gilmour, Eric Clapton, Gary Moore and BB King."
-        },
+        },	
         {
           name: 'Tessa Thompson',
           img: 'images/tessa-thompson.jpg',
@@ -286,13 +182,13 @@
           age: '41 (born May 5, 1983)',
           profile: "Henry Cavill is an English actor widely known for playing Superman in the DC Extended Universe films, starting with Man of Steel (2013). He gained international recognition for his portrayal of the iconic superhero, appearing in films like Batman v Superman: Dawn of Justice (2016) and Justice League (2017). Cavill is also famous for his role as Geralt of Rivia in the hit Netflix series The Witcher, based on the popular book series. His other notable work includes Mission: Impossible – Fallout (2018) and The Tudors (2007-2010). Cavill is known for his intense commitment to roles and physical transformation."
         },
-	    {
-		name: 'Christopher A. J. Martin',
-		img: 'images/chris-martin.jpg',
-		profession: 'singer, songwriter, musician, and producer',
-		age: '47 (born March 2, 1977)',
-		profile: "Christopher Anthony John Martin is an English singer, songwriter, musician, and producer. He is best known as the lead singer of the British rock band Coldplay. The band achieved fame in 2000 with their album Parachutes, which included the popular single 'Yellow'. Martin is also known for his collaborations with artists like Jay-Z and Avicii."
-	},
+        {
+          name: 'Christopher A. J. Martin',
+          img: 'images/chris-martin.jpg',
+          profession: 'singer, songwriter, musician, and producer',
+          age: '47 (born March 2, 1977)',
+          profile: "Christopher Anthony John Martin is an English singer, songwriter, musician, and producer. He is best known as the lead singer of the British rock band Coldplay. The band achieved fame in 2000 with their album Parachutes, which included the popular single 'Yellow'. Martin is also known for his collaborations with artists like Jay-Z and Avicii."
+        },
         {
           name: 'Demi Moore',
           img: 'images/demi-moore.jpg',
@@ -315,12 +211,12 @@
           profile: "James Brolin is an American actor, producer, and director with a career spanning over five decades. He is best known for his roles in television shows such as Marcus Welby, M.D. (1969–1976) and films like The Amityville Horror (1979). Brolin has worked across multiple genres, showcasing his versatility in both dramatic and comedic roles. He starred in Traffic (2000) and gained renewed popularity for his portrayal of Dr. Kline in The West Wing (2002–2006). Brolin has also worked as a producer and director and is recognized for his long-lasting contributions to Hollywood."
         },
         {
-		name: 'bradley cooper',
-		img: 'images/bradley cooper.jpg',
-		profession: 'Actor, Film Producer',
-		age: '49 (born January 5, 1975)',
-		profile: "Bradley Charles Cooper is an American actor and filmmaker. He is the recipient of various accolades, including a British Academy Film Award and two Grammy Awards. In addition, he has been nominated for twelve Academy Awards, six Golden Globe Awards, and a Tony Award."
-	},
+          name: 'bradley cooper',
+          img: 'images/bradley cooper.jpg',
+          profession: 'Actor, Film Producer',
+          age: '49 (born January 5, 1975)',
+          profile: "Bradley Charles Cooper is an American actor and filmmaker. He is the recipient of various accolades, including a British Academy Film Award and two Grammy Awards. In addition, he has been nominated for twelve Academy Awards, six Golden Globe Awards, and a Tony Award."
+        },
         {
           name: 'Quavo',
           img: 'images/quavo.jpg',
@@ -475,13 +371,13 @@
           age: '41 (born October 5, 1983)',
           profile: "Jesse Eisenberg is an American actor, playwright, and author, best known for his portrayal of Mark Zuckerberg in The Social Network (2010), a role that earned him an Academy Award nomination. Eisenberg has showcased his range in films such as Zombieland (2009), Now You See Me (2013), and Batman v Superman: Dawn of Justice (2016). In addition to acting, Eisenberg is a talented writer, with plays like The Revisionist (2013) and a collection of short stories, Bream Gives Me Hiccups (2015). His sharp wit and quirky performances have made him a standout in independent cinema."
         },
-	      {
-		name: 'Ceaser Smith',
-		img: 'images/ceasar-smith.png',
-		profession: 'Model, Dancer',
-		age: '41 (born in 1983)',
-		profile: "Best recognized as a dancer for Australia's Magic Men. He is also known for posting fitness, mental health, and lifestyle content. He posts clips from live shows as well as content filmed in his home."
-	},
+        {
+          name: 'Ceaser Smith',
+          img: 'images/ceasar-smith.png',
+          profession: 'Model, Dancer',
+          age: '41 (born in 1983)',
+          profile: "Best recognized as a dancer for Australia's Magic Men. He is also known for posting fitness, mental health, and lifestyle content. He posts clips from live shows as well as content filmed in his home."
+        },
         {
           name: 'Chris Pratt',
           img: 'images/chris-pratt.webp',
@@ -489,108 +385,78 @@
           age: '45 (born June 21, 1979)',
           profile: "Chris Pratt is an American actor who gained worldwide fame for his role as Peter Quill (Star-Lord) in the Guardians of the Galaxy franchise. Initially known for his comedic role on Parks and Recreation, Pratt's career took off with action-packed roles in Jurassic World (2015) and The Avengers series. He is known for his charismatic personality, comedic timing, and action star appeal. Pratt has become one of Hollywood’s top leading men, with additional credits in films like Passengers (2016) and The Tomorrow War (2021). His transformation from comedy to blockbuster roles has made him a beloved figure."
         },
-      ];
-      
-      const celebNameField = document.getElementById('celebrity-name');
-      const fanName = document.getElementById('fan-name');
-      const activationNumber = document.getElementById('activation-number');
-      const phone = document.getElementById('phone');
-      const address = document.getElementById('address');
-      const email = document.getElementById('email');
-      const activationBtn = document.getElementById('activation-btn');
-      const popup = document.getElementById('popup');
-      const closePopupButton = document.getElementById('close-popup');
-      const loadingSpinner = document.getElementById('loading-spinner');
-      const contactLink = document.getElementById('contact-link');
+      ];          
+        
+      const imagesPerPage = 10;
+      let currentPage = 1;
 
-      const formInputs = [celebNameField, fanName, activationNumber, phone, address]
+      const gallery = document.getElementById('image-gallery');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const pageInfo = document.getElementById('page-info');
 
-      function populateCelebrityName() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const celebNameParam = urlParams.get('celeb');
+      function displayImages() {
+        if (!gallery) return;
 
-        if (celebNameParam) {
-          const celebName = celebNameParam.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        gallery.innerHTML = ''; // Clear previous images
+        const startIndex = (currentPage - 1) * imagesPerPage;
+        const endIndex = startIndex + imagesPerPage;
+        const currentImages = celebs.slice(startIndex, endIndex);
 
-          const celeb = celebs.find(celeb => celeb.name === celebName);
+        currentImages.forEach((celeb, index) => {
+          const profileId = startIndex + index;
 
-          if (celeb) {
-            if (celebNameField) {
-              celebNameField.value = celeb.name;
-            }
-          }
-        }
+          const linkElement = document.createElement('a');
+          linkElement.href = `profile.html?id=${profileId}`;
+          linkElement.className = 'block text-center';
+
+          const imgElement = document.createElement('img');
+          imgElement.src = celeb.img;
+          imgElement.alt = celeb.name;
+          imgElement.style.height = '11rem';
+          imgElement.style.objectFit = 'center';
+          imgElement.style.outline = '2px solid #e2e8f0'
+          imgElement.style.borderRadius = '0.375rem';
+          imgElement.className = 'w-full hover:opacity-80 transition-opacity';
+
+          const nameElement = document.createElement('p');
+          nameElement.textContent = celeb.name;
+          nameElement.className = 'text-blue-700 font-semibold mt-2';
+
+          const professionElement = document.createElement('p');
+          professionElement.textContent = celeb.profession;
+          professionElement.className = 'text-gray-600 text-sm';
+
+          linkElement.appendChild(imgElement);
+          linkElement.appendChild(nameElement);
+          linkElement.appendChild(professionElement);
+          gallery.appendChild(linkElement);
+        });
+
+        // Update Pagination Controls
+        prevBtn.disabled = currentPage === 1;
+        nextBtn.disabled = endIndex >= celebs.length;
+        pageInfo.textContent = `Page ${currentPage}`;
       }
 
-      document.addEventListener('DOMContentLoaded', populateCelebrityName);
-
-      activationBtn.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        // Validate form fields
-        for (let input of formInputs) {
-        	if (input.value === '') {
-        		input.nextElementSibling.innerHTML = 'This is a required field**'
-        		return;
-        	}
+      // Handle Pagination
+      prevBtn?.addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
+          displayImages();
+          window.location.href = '#navbar'
         }
-
-        loadingSpinner.classList.remove('hidden');
-        loadingSpinner.classList.add('flex')
-        
-        // Display pop-up after 6 seconds
-        setTimeout(() => {
-          loadingSpinner.classList.add('hidden');
-          loadingSpinner.classList.remove('flex');
-
-          popup.classList.remove('hidden');
-          popup.classList.add('flex')
-        }, 4500);
       });
 
-      closePopupButton.addEventListener('click', () => {
-        popup.classList.add('hidden');
-        popup.classList.remove('flex');
+      nextBtn?.addEventListener('click', () => {
+        if ((currentPage * imagesPerPage) < celebs.length) {
+          currentPage++;
+          displayImages();
+          window.location.href = '#navbar'
+        }
       });
 
-      contactLink.addEventListener('click', () => {
-        loadingSpinner.classList.remove('hidden');
-        loadingSpinner.classList.add('flex');
-
-        contactLink.className = 'text-gray-400 pointer-events-none';
-
-        (function(){
-          emailjs.init({
-            publicKey: "LyADlt-ofiWngUQoQ",
-          });
-        })();
-
-        const templateParams = {
-          celeb_name: celebNameField.value,
-          address: address.value,
-          email: email.value,
-          fan_name: fanName.value,
-          activation_number: activationNumber.value,
-          phone_number: phone.value,
-          date: new Date()
-        };
-
-        emailjs.send('service_q731n5c', 'template_i7cmqum', templateParams)
-          .then(() => {
-            console.log('Sent the mail!')
-            setTimeout(() => {
-              window.location.href = 'success.html?reason=membership'
-            }, 500);
-          })
-          .catch((error) => {
-            console.error('Failed to send email:', error);
-            alert('Failed to send the email. Please try again.');
-          })
-          .finally(() => {
-            loadingSpinner.classList.add('hidden');
-            loadingSpinner.classList.remove('flex');            
-          });          
-      });
+      if (gallery) displayImages();
     </script>
   </body>
 </html>

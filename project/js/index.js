@@ -31,7 +31,7 @@ const celebs = [
 		profession: 'Musician, Guitarist',
 		age: "Been a performer for 13 years",
 		profile: "Neville James Martin is a Blues based guitarist from Belfast N. Ireland. After having been a guitar instructor for many years he gained much attention across various social media platforms during the COVID-19 pandemic in 2021. Martin's style of playing has been compared to that of David Gilmour, Eric Clapton, Gary Moore and BB King."
-	},	
+	},
 	{
 		name: 'Tessa Thompson',
 		img: 'images/tessa-thompson.jpg',
@@ -83,7 +83,7 @@ const celebs = [
 	},
 	{
 		name: 'Ben Affleck',
-		img: 	'images/ben-affleck.jpg',
+		img: 'images/ben-affleck.jpg',
 		profession: 'Actor, Director, Producer, Screenwriter',
 		age: '51 (born August 15, 1972)',
 		profile: "Ben Affleck is an American actor, director, producer, and screenwriter known for his versatile career in both Hollywood blockbusters and independent films. He gained early fame with his role in Good Will Hunting (1997), which he co-wrote with childhood friend Matt Damon, earning them an Academy Award for Best Original Screenplay. Affleck has appeared in a variety of successful films, including Argo (2012), which he also directed and won the Academy Award for Best Picture. He is also known for his portrayal of Batman in the DC Extended Universe and has produced and directed several other notable projects throughout his career."
@@ -321,99 +321,27 @@ const celebs = [
 	},
 ];
 
-const imagesPerPage = 10;
-let currentPage = 1;
-
-const gallery = document.getElementById('image-gallery');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const pageInfo = document.getElementById('page-info');
-
-// Display Gallery on Home Page
-function displayImages() {
-	if (!gallery) return;
-
-	gallery.innerHTML = ''; // Clear previous images
-	const startIndex = (currentPage - 1) * imagesPerPage;
-	const endIndex = startIndex + imagesPerPage;
-	const currentImages = celebs.slice(startIndex, endIndex);
-
-	currentImages.forEach((celeb, index) => {
-		const profileId = startIndex + index;
-
-		const linkElement = document.createElement('a');
-		linkElement.href = `profile.html?id=${profileId}`;
-		linkElement.className = 'block text-center';
-
-		const imgElement = document.createElement('img');
-		imgElement.src = celeb.img;
-		imgElement.alt = celeb.name;
-		imgElement.style.height = '11rem';
-		imgElement.style.objectFit = 'center';
-		imgElement.style.outline = '2px solid #e2e8f0'
-		imgElement.style.borderRadius = '0.375rem';
-		imgElement.className = 'w-full hover:opacity-80 transition-opacity';
-
-		const nameElement = document.createElement('p');
-		nameElement.textContent = celeb.name;
-		nameElement.className = 'text-blue-700 font-semibold mt-2';
-
-		const professionElement = document.createElement('p');
-		professionElement.textContent = celeb.profession;
-		professionElement.className = 'text-gray-600 text-sm';
-
-		linkElement.appendChild(imgElement);
-		linkElement.appendChild(nameElement);
-		linkElement.appendChild(professionElement);
-		gallery.appendChild(linkElement);
-	});
-
-	// Update Pagination Controls
-	prevBtn.disabled = currentPage === 1;
-	nextBtn.disabled = endIndex >= celebs.length;
-	pageInfo.textContent = `Page ${currentPage}`;
-}
-
-// Handle Pagination
-prevBtn?.addEventListener('click', () => {
-	if (currentPage > 1) {
-		currentPage--;
-		displayImages();
-		window.location.href = '#search-bar'
-	}
-});
-
-nextBtn?.addEventListener('click', () => {
-	if ((currentPage * imagesPerPage) < celebs.length) {
-		currentPage++;
-		displayImages();
-		window.location.href = '#search-bar'
-	}
-});
-
-if (gallery) displayImages();
-
 const searchInput = document.querySelector('input[type="text"]');
 const searchResults = document.getElementById('search-results');
 
 // Handle search input
 searchInput.addEventListener('input', (e) => {
-  const query = e.target.value.toLowerCase();
-  searchResults.innerHTML = ''; // Clear previous results
-  
-  if (query === '') {
-    searchResults.classList.add('hidden');
-    return;
-  }
+	const query = e.target.value.toLowerCase();
+	searchResults.innerHTML = ''; // Clear previous results
 
-  const filteredCelebs = celebs
-    .map((celeb, index) => ({ ...celeb, index }))
-    .filter(celeb => celeb.name.toLowerCase().includes(query));
+	if (query === '') {
+		searchResults.classList.add('hidden');
+		return;
+	}
 
-  if (filteredCelebs.length > 0) {
-    filteredCelebs.forEach(celeb => {
-      const resultItem = document.createElement('div');
-      resultItem.className = 'flex items-center p-2 hover:bg-gray-100 cursor-pointer w-full';
+	const filteredCelebs = celebs
+		.map((celeb, index) => ({ ...celeb, index }))
+		.filter(celeb => celeb.name.toLowerCase().includes(query));
+
+	if (filteredCelebs.length > 0) {
+		filteredCelebs.forEach(celeb => {
+			const resultItem = document.createElement('div');
+			resultItem.className = 'flex items-center p-2 hover:bg-gray-100 cursor-pointer w-full';
 
 			const img = document.createElement('img');
 			img.src = celeb.img;
@@ -421,7 +349,7 @@ searchInput.addEventListener('input', (e) => {
 			img.style.height = '2.5rem';
 			img.style.width = '2.5rem';
 			img.className = 'object-cover block mr-2 rounded-lg border border-gray-200';
-			
+
 			const text = document.createElement('div');
 			text.innerHTML = `
 				<p class="font-medium text-blue-600 text-sm">${celeb.name}</p>
@@ -430,17 +358,31 @@ searchInput.addEventListener('input', (e) => {
 
 			resultItem.append(img);
 			resultItem.append(text);
-						
-      resultItem.addEventListener('click', () => {
-        window.location.href = `profile.html?id=${celeb.index}`;
-      });
 
-      searchResults.appendChild(resultItem);
-    });
+			resultItem.addEventListener('click', () => {
+				window.location.href = `profile.html?id=${celeb.index}`;
+			});
 
-    searchResults.classList.remove('hidden');
-  } else {
-    searchResults.innerHTML = `<p class="p-2 text-gray-500 text-center">No results found</p>`;
-    searchResults.classList.remove('hidden');
-  }
+			searchResults.appendChild(resultItem);
+		});
+
+		searchResults.classList.remove('hidden');
+	} else {
+		searchResults.innerHTML = `<p class="p-2 text-gray-500 text-center">No results found</p>`;
+		searchResults.classList.remove('hidden');
+	}
 });
+
+let slideIndex = 0;
+function showSlides() {
+	let slides = document.querySelectorAll(".mySlides");
+
+	slides.forEach(slide => slide.classList.add("hidden"));
+	slideIndex++;
+	
+	if (slideIndex > slides.length) { slideIndex = 1 }
+	slides[slideIndex - 1].classList.remove("hidden");
+
+	setTimeout(showSlides, 6000);
+}
+showSlides();

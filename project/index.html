@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="output.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <style>
+      @keyframes fade {
+        from { opacity: 0.4; }
+        to { opacity: 1; }
+      }
+      .fade {
+        animation: fade 1.5s;
+      }
+    </style>
+
     <title>Executive Managers</title>
   </head>
   <body class="font-inter relative bg-gray-100 tracking-wide">
@@ -25,7 +36,7 @@
 
       <span class="flex items-center space-x-2 ml-1">
         <span class="material-symbols-outlined text-blue-700">verified</span>
-        <a href="index.html#search-bar"><p class="text-blue-700 text-base font-bold">Celebrities</p></a>
+        <a href="celebs.html"><p class="text-blue-700 text-base font-bold">Celebrities</p></a>
       </span>
 
       <span class="flex items-center space-x-2 ml-1">
@@ -87,16 +98,37 @@
     <div id="search-results" class="absolute bg-white shadow-lg rounded-md md:rounded-lg md:mx-auto w-11/12 sm:w-2/3 md:max-w-md max-h-60 overflow-y-auto mt-1 mx-4 z-30 hidden md:left-1/2 md:transform md:-translate-x-1/2">
     </div>
 
-    <!-- Image Gallery -->
-    <section class="p-3 md:px-6 md:py-4 lg:px-10 lg:py-5">
-      <div id="image-gallery" class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+    <!-- Hero Section -->
+    <section class="p-2 mt-2 text-center">
+      <!-- Slideshow -->
+      <div class="max-w-3xl md:mx-auto relative mx-2">
+        <div class="mySlides fade hidden relative">
+          <img src="images/tessa-thompson.jpg" class="w-full rounded-lg outline outline-1 outline-slate-300">
+        </div>
+      
+        <div class="mySlides fade hidden relative">
+          <img src="images/ryan-reynolds.jpg" class="w-full rounded-lg outline outline-1 outline-slate-300">
+        </div>
+      
+        <div class="mySlides fade hidden relative">
+          <img src="images/david-corenswet.jpg" class="w-full rounded-lg outline outline-1 outline-slate-300">
+        </div>
       </div>
+      
+      <!-- Heading -->
+      <h2 class="text-4xl font-bold mt-5 mb-1 text-blue-700 md:text-5xl">Book A Celebrity</h2>
+      
+      <!-- Note -->
+      <p class="text-gray-600 mb-6 text-sm md:text-base">From sold-out concerts to inspiring speaking engagements, we'll help you book the perfect celebrity for your event. Unlock the power of celebrity endorsements and gain exclusive access to top celebrities.</p>
 
-      <!-- Pagination Controls -->
-      <div class="flex justify-center items-center mt-6 space-x-3">
-        <button id="prev-btn" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-900 disabled:opacity-50" disabled>Prev</button>
-        <span id="page-info" class="text-blue-700 font-medium">Page 1</span>
-        <button id="next-btn" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-900 disabled:opacity-50">Next</button>
+      <!-- Button -->
+      <div class="mt-3 mx-auto flex flex-col space-y-2 w-10/12 md:max-w-sm">
+        <a href="celebs.html" class="w-full">
+          <button class="w-full flex items-center justify-center gap-1.5 text-white bg-blue-700 px-6 py-4 rounded-xl hover:bg-blue-900 text-base">
+            <span class="material-symbols-outlined">collections_bookmark</span>
+            Book Now
+          </button>
+        </a>
       </div>
     </section>
 
@@ -222,7 +254,7 @@
 
         <!-- Quick Links -->
         <div class="flex flex-col sm:flex-row space-y-1 ml-2 sm:space-y-0 sm:space-x-6 text-blue-700 tracking-normal">
-          <a href="#search-bar" class="hover:text-blue-900">Celebrities</a>
+          <a href="celebs.html" class="hover:text-blue-900">Celebrities</a>
           <a href="membership.html" class="hover:text-blue-900">Membership Card</a>
           <a href="pricing.html" class="hover:text-blue-900">Pricing</a>
           <a href="" class="hover:text-blue-900">Promotion</a>
@@ -249,7 +281,7 @@
 
       <!-- Copyright Section -->
       <div class="text-center mt-6 text-gray-800 text-sm mx-3 tracking-tight">
-        <p>&copy; 2024 Executive Managers Inc. All rights reserved.</p>
+        <p>&copy; 2025 Executive Managers Inc. All rights reserved.</p>
       </div>
     </footer>
 
