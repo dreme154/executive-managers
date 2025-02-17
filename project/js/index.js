@@ -34,7 +34,7 @@ const celebs = [
 	},
 	{
 		name: 'Gianluca Ginoble',
-		img: 'images/gianluca-ginoble.jpg',
+		img: 'images/Gianluca-Ginoble.jpg',
 		profession: 'Actor',
 		age: '30 (born February 11, 1995)',
 		profile: "Gianluca Ginoble was born in Abruzzo, Italy. He is an actor, known for Entourage, Il Volo: L'amore si muove and Il Volo: Grande amore."
