@@ -13,21 +13,7 @@ const celebs = [
 		age: '44 (born April 26, 1980)',
 		profile: "Channing Tatum is an American actor, producer, and former dancer best known for his roles in blockbuster films. He gained widespread recognition with Step Up (2006), showcasing his dance skills, and later starred in hit movies like 21 Jump Street, Magic Mike, and Foxcatcher. Tatum’s portrayal of a male stripper in Magic Mike was inspired by his real-life experiences and became a cultural phenomenon, spawning a sequel and a stage show. His blend of charm, humor, and physicality has cemented him as one of Hollywood's most bankable and versatile stars."
 	},
-	{
-		name: 'Brantley Gilbert',
-		img: 'images/brantly-gilbert.jpg',
-		profession: 'Country Rock Singer, Songwritter, Record Producer',
-		age: '39 (born January 20, 1985)',
-		profile: "Brantley Keith Gilbert is an American country rock singer, songwriter and record producer from Jefferson, Georgia. He was originally signed to Colt Ford's label, Average Joes Entertainment, where he released Modern Day Prodigal Son and Halfway to Heaven."
-	},
-	{
-		name: 'Gianluca Ginoble',
-		img: 'images/Gianluca-Ginoble.jpg',
-		profession: 'Actor',
-		age: '30 (born February 11, 1995)',
-		profile: "Gianluca Ginoble was born in Abruzzo, Italy. He is an actor, known for Entourage, Il Volo: L'amore si muove and Il Volo: Grande amore."
-	},
-	{
+		{
 		name: 'Neville James Martin',
 		img: 'images/neville-martin.jpg',				
 		profession: 'Musician, Guitarist',
@@ -348,6 +334,20 @@ const celebs = [
 		profession: 'Actor, Producer',
 		age: '45 (born June 21, 1979)',
 		profile: "Chris Pratt is an American actor who gained worldwide fame for his role as Peter Quill (Star-Lord) in the Guardians of the Galaxy franchise. Initially known for his comedic role on Parks and Recreation, Pratt's career took off with action-packed roles in Jurassic World (2015) and The Avengers series. He is known for his charismatic personality, comedic timing, and action star appeal. Pratt has become one of Hollywood’s top leading men, with additional credits in films like Passengers (2016) and The Tomorrow War (2021). His transformation from comedy to blockbuster roles has made him a beloved figure."
+	},
+	{
+		name: 'Brantley Gilbert',
+		img: 'images/brantly-gilbert.jpg',
+		profession: 'Country Rock Singer, Songwritter, Record Producer',
+		age: '39 (born January 20, 1985)',
+		profile: "Brantley Keith Gilbert is an American country rock singer, songwriter and record producer from Jefferson, Georgia. He was originally signed to Colt Ford's label, Average Joes Entertainment, where he released Modern Day Prodigal Son and Halfway to Heaven."
+	},
+	{
+		name: 'Gianluca Ginoble',
+		img: 'images/Gianluca-Ginoble.jpg',
+		profession: 'Actor',
+		age: '30 (born February 11, 1995)',
+		profile: "Gianluca Ginoble was born in Abruzzo, Italy. He is an actor, known for Entourage, Il Volo: L'amore si muove and Il Volo: Grande amore."
 	},
 ];
 
