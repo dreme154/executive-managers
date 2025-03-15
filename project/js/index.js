@@ -361,6 +361,13 @@ const celebs = [
 		age: '30 (born February 11, 1995)',
 		profile: "Gianluca Ginoble was born in Abruzzo, Italy. He is an actor, known for Entourage, Il Volo: L'amore si muove and Il Volo: Grande amore."
 	},
+	{
+		name: 'Tayler Holder',
+		img: 'images/tayler-holder.jpg',
+		profession: 'Actor, Musician',
+		age: '27 (born August 19, 1997)',
+		profile: "Tayler Holder was born on 19 August 1997 in Alvarado, Johnson County, Texas, USA. He is an actor, known for Dirt, House of Creators and LEAN."
+	},
 ];
 
 const searchInput = document.querySelector('input[type="text"]');
