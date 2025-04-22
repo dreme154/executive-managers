@@ -370,7 +370,7 @@ const celebs = [
 	},
 	{
 		name: 'Lilith Cavaliere',
-		img: 'images/Lilith-Cavalierejpg',
+		img: 'images/Lilith-Cavaliere.jpg',
 		profession: 'social media personality',
 		age: '',
 		profile: "Lilith Cavaliere is an Australian social media personality and influencer, known for her fashion and lifestyle content, particularly on Instagram and YouTube."
