@@ -356,6 +356,13 @@ const celebs = [
 		age: '27 (born August 19, 1997)',
 		profile: "Tayler Holder was born on 19 August 1997 in Alvarado, Johnson County, Texas, USA. He is an actor, known for Dirt, House of Creators and LEAN."
 	},
+	{
+		name: 'Lilith Cavaliere',
+		img: 'images/Lilith-Cavalierejpg',
+		profession: 'social media personality',
+		age: '',
+		profile: "Lilith Cavaliere is an Australian social media personality and influencer, known for her fashion and lifestyle content, particularly on Instagram and YouTube."
+	},
 ];
 
 const profileImg = document.getElementById('profile-img');
