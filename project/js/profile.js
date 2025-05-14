@@ -363,14 +363,14 @@ const celebs = [
 		age: '',
 		profile: "Lilith Cavaliere is an Australian social media personality and influencer, known for her fashion and lifestyle content, particularly on Instagram and YouTube."
 	},
-];
-{
+	{
 		name: 'Chase Matthew',
 		img: 'images/Chase-Matthew.png',
 		profession: 'Country music Musician,Song Writer',
 		age: '27 (born December 20, 1997)',
 		profile: "Chase Matthew McQuitty is an American country music singer and songwriter. Signed to Warner Records Nashville, he charted in late 2023 with the single Love You Ag by ain".
 	},
+];
 
 const profileImg = document.getElementById('profile-img');
 const profileName = document.getElementById('profile-name');
