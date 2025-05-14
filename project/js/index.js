@@ -152,11 +152,11 @@ const celebs = [
 		profile: "Bradley Charles Cooper is an American actor and filmmaker. He is the recipient of various accolades, including a British Academy Film Award and two Grammy Awards. In addition, he has been nominated for twelve Academy Awards, six Golden Globe Awards, and a Tony Award."
 	},
 	{
-		name: 'Quavo',
-		img: 'images/quavo.jpg',
-		profession: 'Rapper, Singer, Songwriter',
-		age: '32 (born April 2, 1991)',
-		profile: "Quavo is an American rapper, singer, and songwriter best known as a member of the hip hop trio Migos. The group achieved global fame with hits like “Bad and Boujee” and “Versace.” Quavo has made his mark as a versatile artist, collaborating with artists across genres, including Drake, Post Malone, and Cardi B. In addition to his work with Migos, Quavo has pursued a successful solo career with songs like “Workin Me” and his album Quavo Huncho (2018). His distinct flow and catchy hooks have made him one of the most influential figures in modern hip hop."
+		name: 'Chase Matthew',
+		img: 'images/Chase-Matthew.png',
+		profession: 'Country music Musician,Song Writer',
+		age: '27 (born December 20, 1997)',
+		profile: "Chase Matthew McQuitty is an American country music singer and songwriter. Signed to Warner Records Nashville, he charted in late 2023 with the single Love You Ag by ain".
 	},
 	{
 		name: 'Scarlett Johansson',
@@ -374,13 +374,6 @@ const celebs = [
 		profession: 'social media personality',
 		age: '',
 		profile: "Lilith Cavaliere is an Australian social media personality and influencer, known for her fashion and lifestyle content, particularly on Instagram and YouTube."
-	},
-	{
-		name: 'Chase Matthew',
-		img: 'images/Chase-Matthew.png',
-		profession: 'Country music Musician,Song Writer',
-		age: '27 (born December 20, 1997)',
-		profile: "Chase Matthew McQuitty is an American country music singer and songwriter. Signed to Warner Records Nashville, he charted in late 2023 with the single Love You Ag by ain".
 	},
 ];
 
