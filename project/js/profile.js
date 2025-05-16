@@ -144,7 +144,7 @@ const celebs = [
 		img: 'images/Chase-Matthew.png',
 		profession: 'Country music Musician,Song Writer',
 		age: '27 (born December 20, 1997)',
-		profile: "Chase Matthew McQuitty is an American country music singer and songwriter. Signed to Warner Records Nashville, he charted in late 2023 with the single Love You Ag by ain".
+		profile: "Chase Matthew McQuitty is an American country music singer and songwriter. Signed to Warner Records Nashville, he charted in late 2023 with the single Love You Ag by ain"
 	},
 	{
 		name: 'Scarlett Johansson',
@@ -368,7 +368,7 @@ const celebs = [
 		img: 'images/Chase-Matthew.png',
 		profession: 'Country music Musician,Song Writer',
 		age: '27 (born December 20, 1997)',
-		profile: "Chase Matthew McQuitty is an American country music singer and songwriter. Signed to Warner Records Nashville, he charted in late 2023 with the single Love You Ag by ain".
+		profile: "Chase Matthew McQuitty is an American country music singer and songwriter. Signed to Warner Records Nashville, he charted in late 2023 with the single Love You Ag by ain"
 	},
 ];
 
