@@ -375,6 +375,13 @@ const celebs = [
 		age: '',
 		profile: "Lilith Cavaliere is an Australian social media personality and influencer, known for her fashion and lifestyle content, particularly on Instagram and YouTube."
 	},
+	{
+		name: 'Alanis Nadine Morissette',
+		img: 'images/alanis_nadine.jpg',
+		profession: 'singer, songwriter and actress',
+		age: '50 (born June 1, 1974)',
+		profile: "Alanis Nadine Morissette is a Canadian and American singer-songwriter and actress. Known for her emotive mezzo-soprano voice and confessional songwriting, she became a cultural phenomenon during the mid 1990s and early 2000s."
+	},
 ];
 
 const searchInput = document.querySelector('input[type="text"]');
